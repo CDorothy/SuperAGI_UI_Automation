@@ -10,7 +10,7 @@ const { chromium } = require('playwright');
 
   // Search for LG soundbar
   await page.fill('#twotabsearchtextbox', 'lg soundbar');
-  await page.press('#twotabsearchtextbox', 'Enter');
+  await page.click('xpath=//input[@type="submit"]);
   await page.waitForTimeout(3000); // wait for the results to load
 
   // Read product names and prices
